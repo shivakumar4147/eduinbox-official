@@ -4,35 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="Y-TvwXNi1zH87FwKzhcCqsE8MHOWdBqNKi1L--i704s" />
-    <title>EduInbox | Academic Organization Tool</title>
+    <title>EduInbox | Intelligent Academic Organizer</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-        header { border-bottom: 2px solid #eee; padding-bottom: 20px; }
-        .footer { margin-top: 50px; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
-        a { color: #1a73e8; text-decoration: none; }
+        :root {
+            --primary-color: #D4AF37; /* Royal Gold to match your app */
+            --bg-color: #fafafa;
+            --text-color: #333;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: var(--bg-color);
+            color: var(--text-color); 
+        }
+        header { 
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color); 
+            padding-bottom: 30px; 
+            margin-bottom: 40px;
+        }
+        h1 { color: var(--primary-color); font-size: 2.5em; margin-bottom: 10px; }
+        h2 { color: #444; border-left: 5px solid var(--primary-color); padding-left: 15px; }
+        main { background: white; padding: 30px; border-radius: 15px; boxShadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .feature-list { list-style-type: none; padding: 0; }
+        .feature-list li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .feature-list li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-color); font-weight: bold; }
+        .footer { 
+            margin-top: 60px; 
+            text-align: center;
+            font-size: 0.9em; 
+            color: #777; 
+            border-top: 1px solid #ddd; 
+            padding-top: 30px; 
+        }
+        a { color: #1a73e8; text-decoration: none; font-weight: 500; }
         a:hover { text-decoration: underline; }
+        .contact-box { background: #f0f0f0; padding: 15px; border-radius: 8px; display: inline-block; margin-top: 20px; }
     </style>
 </head>
 <body>
     <header>
         <h1>EduInbox</h1>
-        <p>Your intelligent academic material organizer.</p>
+        <p><strong>Official Homepage</strong></p>
+        <p>Simplifying the way students manage academic resources.</p>
     </header>
 
     <main>
-        <h2>About the App</h2>
-        <p>EduInbox helps students stay organized by automatically identifying academic attachments in their emails and categorizing them into local folders. No more searching through hundreds of emails for that one lecture slide.</p>
+        <h2>About EduInbox</h2>
+        <p>EduInbox is a productivity tool designed for university students. Our app securely connects to your email to scan for academic materials like PDFs, PPTs, and assignments, automatically organizing them into dedicated folders on your device.</p>
         
-        <h3>Key Features:</h3>
-        <ul>
-            <li>Automatic attachment detection.</li>
-            <li>Local folder synchronization.</li>
-            <li>Professor-specific categorization.</li>
+        <h3>Core Features:</h3>
+        <ul class="feature-list">
+            <li><strong>Automated Sync:</strong> Instantly fetches new materials from linked professor emails.</li>
+            <li><strong>Smart Categorization:</strong> Sorts files by subject and instructor automatically.</li>
+            <li><strong>Offline Access:</strong> View your lecture notes and assignments anytime without an internet connection.</li>
+            <li><strong>Eisenhower Matrix:</strong> Built-in task manager to prioritize your academic workload.</li>
         </ul>
+
+        <h3>Security & Transparency</h3>
+        <p>EduInbox uses the Gmail API in <strong>read-only mode</strong>. We do not delete, compose, or send emails. All processed files are stored locally on your device for maximum privacy.</p>
     </main>
 
     <div class="footer">
-        <p>© 2026 EduInbox | <a href="privacy.html">Privacy Policy</a> | <a href="mailto:4147shivakumar@gmail.com">Support</a></p>
+        <div class="contact-box">
+            <strong>Support:</strong> <a href="mailto:4147shivakumar@gmail.com">4147shivakumar@gmail.com</a>
+        </div>
+        <p>© 2026 EduInbox | <a href="privacy.html">Privacy Policy</a></p>
+        <p><small>Developed by Shivakumar | Verified via Google Search Console</small></p>
     </div>
 </body>
 </html>
